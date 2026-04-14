@@ -85,7 +85,6 @@ public class Polisa {
         }
         if (skladka > maxProg) {
             skladka = maxProg;
-
         }
         return Math.round(skladka * 100.0) / 100.0;
 
@@ -120,7 +119,6 @@ public class Polisa {
                 ", czyBezszkodowyKlient=" + czyBezszkodowyKlient +
                 ", skladkaKoncowa=" + obliczSkladkeKoncowa() +
                 '}';
-
     }
 
     @Override
@@ -129,7 +127,5 @@ public class Polisa {
         if (o == null || getClass() != o.getClass()) return false;
         Polisa polisa = (Polisa) o;
         return numerPolisy.equals(polisa.numerPolisy);
-
     }
-
 }
